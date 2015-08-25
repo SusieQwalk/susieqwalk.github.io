@@ -1,0 +1,114 @@
+body {
+  min-width: 280px;
+}
+
+@media screen and (max-width: 640px) and (min-width: 321px) {
+  .principle .align-bottom {
+    position: static;
+  }
+  .principle .destaque-font {
+    text-align: left;
+  }
+  .social a {
+      font-size: 1em;
+  }
+
+  .presentation h2 {
+      font-size: 1.2em;
+  }
+
+}
+
+@media screen and (min-width: 321px) and (max-width: 730px) {
+  .gutters.no-space {
+    margin-bottom: 0;
+  }
+  
+      .projecto-destaque.area .last-row:last-child {
+      margin-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 960px) {
+  .content-text {
+   padding-top: 2em;
+  }
+  
+  h1{
+   font-size: 1.9em;
+  }
+}
+
+
+@media screen and (max-width: 730px) {
+    /* tiny */
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .gutters.no-space > [class*=all-],
+    .gutters.no-space > [class*=xlarge-] {
+
+    }
+
+ 
+     
+.inspira article blockquote {
+        margin-bottom: 2.5em;
+    border-top:solid #666 1px;
+    padding-top:0.5em;
+    }
+  
+  .principle .align-bottom {
+    position: static;
+  }
+  
+  .destaque-font,
+  header a.button, 
+  header .button, 
+  .contact .button,header h1 {
+      font-size: 1.5em;
+  }
+
+  .presentation img {
+        width: 80%;
+  }
+  
+.inspira h1.section-title,.outros h1.section-title {
+      margin-bottom: 1em;
+  }
+  
+.section-title + p {
+      margin-bottom: 0.5em;
+  }
+  
+  .content-text,.content-subtext {
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+  
+  .area {
+  padding-top: 1em;
+
+}
+  
+}
+
+
+@media screen and (max-width: 320px) {
+    .projecto-destaque.area .last-row:last-child {
+      margin-bottom: 0;
+    }
+
+    #mais-projectos .bottom-space-small-n-tiny {
+      margin-bottom: 1em;
+    }
+}
+
+/* +641px */
+@media screen and (min-width: 641px) {
+  .ink-grid .column-group.gutters>.no-margin-item {
+    margin-bottom: 0;
+  }
+  
+}
