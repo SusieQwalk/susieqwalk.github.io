@@ -314,7 +314,7 @@ footer{
 }
 
 .outros .icon-seccao{
-	background-position: 0 -794px;
+	background-position: 0 -1472px;
 }
 .inspira .icon-seccao{
 	background-position: 0 -115px;
@@ -322,6 +322,10 @@ footer{
 
 .contact .icon-seccao{
 	background-position: 0 -226px;
+}
+
+.ilustracao .icon-seccao{
+	background-position: 0 105px;
 }
 
 blockquote {
