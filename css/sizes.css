@@ -103,6 +103,9 @@ body {
     #mais-projectos .bottom-space-small-n-tiny {
       margin-bottom: 1em;
     }
+	  .social a {
+      font-size: 0.8em;
+  }
 }
 
 /* +641px */
