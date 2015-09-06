@@ -106,6 +106,9 @@ body {
 	  .social a {
       font-size: 0.8em;
   }
+	  .sobre article{
+      text-align:left;
+  }
 }
 
 /* +641px */

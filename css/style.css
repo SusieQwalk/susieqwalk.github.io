@@ -419,3 +419,21 @@ label,input{
   padding: 4em 0;
   color: #C1FC92;
 }
+
+.button-menu-mobile.ink-button.right-drawer-trigger {
+	position: fixed;
+	top: 2em;
+	right: 5%;
+	z-index: 1000;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	opacity: 1;
+	transition: opacity 0.15s;
+}
+
+.ink-drawer.push.right .button-menu-mobile.ink-button.right-drawer-trigger {
+	opacity: 0;
+}
+
+.right-drawer {
+	background: black;
+}
