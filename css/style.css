@@ -116,6 +116,10 @@ figure img{
     opacity:1;
 }
 
+.projectos-mobile img,.projecto-destaque img{
+    border:none;
+}
+
 a.button,.button{
     font-family: "Roboto_condensed", Arial, Helvetica, sans-serif;
 	display:inline-block;
