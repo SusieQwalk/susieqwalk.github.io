@@ -93,3 +93,7 @@ $(".jump").click(function() {
 
   return false;
 });
+
+$('.right-drawer a').on('click', function(event) {
+  $('.ink-drawer').toggleClass('push right');
+});
