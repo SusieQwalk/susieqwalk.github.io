@@ -116,7 +116,7 @@ figure img{
     opacity:1;
 }
 
-.projectos-mobile img,.projecto-destaque img{
+.projectos-mobile img,img.no-b{
     border:none;
 }
 
