@@ -447,3 +447,7 @@ label,input{
 .right-drawer {
 	background: black;
 }
+
+iframe {
+	max-width: 100%;
+}
