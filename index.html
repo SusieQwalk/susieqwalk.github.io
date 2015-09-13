@@ -154,75 +154,80 @@
                         <p> Uma vez que na altura ainda não havia ferramentas na casa como o <a href="http://ink.sapo.pt">INK</a>, o código foi feito de raíz de forma a suportar qualquer ecrã. Para obter a independência de resolução utilizei <strong>SVGs com fallback para PNGs</strong>, algo que ainda era bastante recente na altura.</p>
                     </div>
 
-                    <div class="column-group gutters"> 
-                        <article class="all-50 small-100 tiny-100 no-margin-item">
-                            <figure><img class="lazyload-item" data-src="img/cinema-artigo.jpg" alt=""/><noscript><img src="img/cinema-artigo.jpg" alt=""/></noscript></figure>
-                            <div class="content-subtext">
-                                <h2 class="destaque-font fw-100 uppercase">Página de Artigo</h2>
-                                <p>Foquei-me especialmente na área lateral dos artigos fornecendo referências semânticas a pessoas e filmes mencionados nos mesmos. Desta forma o utlizador pode ir absorvendo mais, e rapidamente, informação à medida que vai lendo o artigo. </p>
-                                <p><strong>Destaques da página</strong></p>
-                                <ul class="fw-200 project-highlights">
-                                    <li>tipografia do artigo (hierarquia, legibilidade, diferenciação)</li>
-                                    <li>multimédia fluída (imagem, vídeo, galerias)</li>
-                                    <li>Barra lateral útil:
-                                        <ul>
-                                            <li>"Filmes neste artigo" com link para ficha detalhada</li>
-                                            <li>"Pessoas neste artigo" com link  para biografia</li>
-                                        </ul>
-                                    </li>
-                                </ul> 
-                            </div>
-                        </article>               
-                        <article class="all-50 small-100 tiny-100 no-margin-item">
-                            <figure><img class="lazyload-item" data-src="img/cinema-biografia.jpg" alt=""/><noscript><img class="lazyload-item" data-src="img/cinema-biografia.jpg" alt=""/><noscript><img src="img/cinema-biografia.jpg" alt=""/></noscript></noscript></figure>
-                            <div class="content-subtext">
-                                <h2 class="destaque-font fw-100 uppercase">Página de Biografia</h2>
-                                <p>Nesta página reuni toda a informação disponível acerca de personalidades ligadas ao mundo do cinema. Ordenei a posição na página pela informação mais procurada, recorrendo aos editores do projecto para construir um índice de relevância.</p>
-                                <p><strong>Destaques da página:</strong></p>
-                                <ul class="fw-200 project-highlights">
-                                    <li>Dados biográficos</li>
-                                    <li>Lista de prémios e nomeações (visiveís, sem precisar de <em>progressive disclosure</em>)</li>
-                                    <li>Filmografia</li>
-                                    <li>Multimédia e artigos que mencionassem personalidade</li>
-                                </ul>
-                            </div>
-                        </article>  
-                        <article class="all-50 small-50 tiny-100">
-                            <figure><img class="lazyload-item" data-src="img/cinema-trailers.jpg" alt=""/><noscript><img src="img/cinema-trailers.jpg" alt=""/></noscript></figure> 
-                            <div class="content-subtext">
-                                <h2 class="destaque-font fw-100 uppercase">Área de Trailers</h2>
-                                <p>Criei uma área no final de todas as páginas com as mais recentes trailers. Desta forma <strong>fomenta o consumo de vídeo e consequentemente a publicidade</strong>, pois oferece ao utilizador uma excelente pausa para ser ou, mesmo, tornar-se cinéfilo e actualizar-se sem grande esforço. É o que se pretende.</p>
-                            </div>                        
-                        </article>              
-                        <article class="all-50 small-50 tiny-100">
-                            <figure><img class="lazyload-item" data-src="img/cinema-cartaz.jpg" alt=""/><noscript><img src="img/cinema-cartaz.jpg" alt=""/></noscript></figure>
-                            <div class="content-subtext">
-                                <h2 class="destaque-font fw-100 uppercase">Cartaz</h2>
-                        <p>De forma a simplificar os resultados de pesquisa criei um <strong>filtro automático baseado na georeferênciação</strong>. Assim o utilizador pode obter de forma imediata resultados de <strong>Cinemas e/ou Filmes</strong> a partir da sua localização. Caso queira procurar noutros locais tem ainda essa possibilidade.</p>
-                            </div>                         
-                        </article> 
-                        <article class="all-50 small-50 tiny-100">
-                            <figure><img class="lazyload-item" data-src="img/cinema-capas.jpg" alt=""/><noscript><img src="img/cinema-capas.jpg" alt=""/></noscript></figure>
-                            <div class="content-subtext">
-                                <h2 class="destaque-font fw-100 uppercase">Capas de Filme</h2>
-                        <p>Para permitir um acesso mais directo à informação pretendida desenvolvi um padrão que permite, a partir de uma capa de filme, saltar para três destinos diferentes: detalhes, sessões ou trailer. Isto, sem ocupar demasiado espaço em cima da capa, usando as indispensáveis <strong>transições CSS3</strong> para evidenciar o significado dos ícones. </p>
-                            </div>                         
-                        </article> 
-                        <article class="all-50 small-50 tiny-100">
-                            <figure><img class="lazyload-item" data-src="img/cinema-galeria.jpg" alt=""/><noscript><img src="img/cinema-galeria.jpg" alt=""/></noscript></figure>
-                            <div class="content-subtext">
-                                <h2 class="destaque-font fw-100 uppercase">Galeria</h2>
-                                <p>Embora o recurso de imagens, por vezes, não seja de qualidade (ausência de controlo) proporcionou-se uma fácil navegabilidade, permitindo ao utilizador <strong>disfrutar apelativas galerias de fotografias</strong>. </p>
-                        <p><i class="fa fa-gratipay"></i> Obrigada Brad Pitt!</p>
-                            </div>                        
-                        </article>
-                    </div> 
+                    <p class="top-space align-center">
+                        <a class="button opener dont-auto-open" href="#mais-cinema">Ver detalhes do Cinema <i class="fa fa-long-arrow-down"></i></a>
+                    </p>
+
+                    <div id="mais-cinema" hidden>
+
+                        <div class="column-group gutters"> 
+                            <article class="all-50 small-100 tiny-100 no-margin-item">
+                                <figure><img class="lazyload-item" data-src="img/cinema-artigo.jpg" alt=""/><noscript><img src="img/cinema-artigo.jpg" alt=""/></noscript></figure>
+                                <div class="content-subtext">
+                                    <h2 class="destaque-font fw-100 uppercase">Página de Artigo</h2>
+                                    <p>Foquei-me especialmente na área lateral dos artigos fornecendo referências semânticas a pessoas e filmes mencionados nos mesmos. Desta forma o utlizador pode ir absorvendo mais, e rapidamente, informação à medida que vai lendo o artigo. </p>
+                                    <p><strong>Destaques da página</strong></p>
+                                    <ul class="fw-200 project-highlights">
+                                        <li>tipografia do artigo (hierarquia, legibilidade, diferenciação)</li>
+                                        <li>multimédia fluída (imagem, vídeo, galerias)</li>
+                                        <li>Barra lateral útil:
+                                            <ul>
+                                                <li>"Filmes neste artigo" com link para ficha detalhada</li>
+                                                <li>"Pessoas neste artigo" com link  para biografia</li>
+                                            </ul>
+                                        </li>
+                                    </ul> 
+                                </div>
+                            </article>               
+                            <article class="all-50 small-100 tiny-100 no-margin-item">
+                                <figure><img class="lazyload-item" data-src="img/cinema-biografia.jpg" alt=""/><noscript><img class="lazyload-item" data-src="img/cinema-biografia.jpg" alt=""/><noscript><img src="img/cinema-biografia.jpg" alt=""/></noscript></noscript></figure>
+                                <div class="content-subtext">
+                                    <h2 class="destaque-font fw-100 uppercase">Página de Biografia</h2>
+                                    <p>Nesta página reuni toda a informação disponível acerca de personalidades ligadas ao mundo do cinema. Ordenei a posição na página pela informação mais procurada, recorrendo aos editores do projecto para construir um índice de relevância.</p>
+                                    <p><strong>Destaques da página:</strong></p>
+                                    <ul class="fw-200 project-highlights">
+                                        <li>Dados biográficos</li>
+                                        <li>Lista de prémios e nomeações (visiveís, sem precisar de <em>progressive disclosure</em>)</li>
+                                        <li>Filmografia</li>
+                                        <li>Multimédia e artigos que mencionassem personalidade</li>
+                                    </ul>
+                                </div>
+                            </article>  
+                            <article class="all-50 small-50 tiny-100">
+                                <figure><img class="lazyload-item" data-src="img/cinema-trailers.jpg" alt=""/><noscript><img src="img/cinema-trailers.jpg" alt=""/></noscript></figure> 
+                                <div class="content-subtext">
+                                    <h2 class="destaque-font fw-100 uppercase">Área de Trailers</h2>
+                                    <p>Criei uma área no final de todas as páginas com as mais recentes trailers. Desta forma <strong>fomenta o consumo de vídeo e consequentemente a publicidade</strong>, pois oferece ao utilizador uma excelente pausa para ser ou, mesmo, tornar-se cinéfilo e actualizar-se sem grande esforço. É o que se pretende.</p>
+                                </div>                        
+                            </article>              
+                            <article class="all-50 small-50 tiny-100">
+                                <figure><img class="lazyload-item" data-src="img/cinema-cartaz.jpg" alt=""/><noscript><img src="img/cinema-cartaz.jpg" alt=""/></noscript></figure>
+                                <div class="content-subtext">
+                                    <h2 class="destaque-font fw-100 uppercase">Cartaz</h2>
+                            <p>De forma a simplificar os resultados de pesquisa criei um <strong>filtro automático baseado na georeferênciação</strong>. Assim o utilizador pode obter de forma imediata resultados de <strong>Cinemas e/ou Filmes</strong> a partir da sua localização. Caso queira procurar noutros locais tem ainda essa possibilidade.</p>
+                                </div>                         
+                            </article> 
+                            <article class="all-50 small-50 tiny-100">
+                                <figure><img class="lazyload-item" data-src="img/cinema-capas.jpg" alt=""/><noscript><img src="img/cinema-capas.jpg" alt=""/></noscript></figure>
+                                <div class="content-subtext">
+                                    <h2 class="destaque-font fw-100 uppercase">Capas de Filme</h2>
+                            <p>Para permitir um acesso mais directo à informação pretendida desenvolvi um padrão que permite, a partir de uma capa de filme, saltar para três destinos diferentes: detalhes, sessões ou trailer. Isto, sem ocupar demasiado espaço em cima da capa, usando as indispensáveis <strong>transições CSS3</strong> para evidenciar o significado dos ícones. </p>
+                                </div>                         
+                            </article> 
+                            <article class="all-50 small-50 tiny-100">
+                                <figure><img class="lazyload-item" data-src="img/cinema-galeria.jpg" alt=""/><noscript><img src="img/cinema-galeria.jpg" alt=""/></noscript></figure>
+                                <div class="content-subtext">
+                                    <h2 class="destaque-font fw-100 uppercase">Galeria</h2>
+                                    <p>Embora o recurso de imagens, por vezes, não seja de qualidade (ausência de controlo) proporcionou-se uma fácil navegabilidade, permitindo ao utilizador <strong>disfrutar apelativas galerias de fotografias</strong>. </p>
+                            <p><i class="fa fa-gratipay"></i> Obrigada Brad Pitt!</p>
+                                </div>                        
+                            </article>
+                        </div> 
+                    </div>
                 </div> 
-                <p class="top-space align-center"><a class="button opener" href="#mais-projectos">Ver mais projectos de web <i class="fa fa-long-arrow-down"></i></a>
-                <a class="button closerer" href="#menos-projectos" data-target="#mais-projectos">Ver menos projectos de web <i class="fa fa-long-arrow-up"></i></a></p 
-            ></section>
+            </section>
     <!-- Consultores-->          
-    <div hidden id="mais-projectos">
+    <div id="mais-projectos">
             <section class="projecto-destaque area projecto-consultores">
                 <div class="ink-grid"> 
                     <div class="align-center" id="consultores">        

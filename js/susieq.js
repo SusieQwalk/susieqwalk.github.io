@@ -10,7 +10,7 @@ window.openTargetAndPreviousSections = function(target) {
     if (openers[i-1].href.match(/[^\#]+(\#.*)/)[1]== '#' + target) {
       found = true;
     }
-    if (found) {
+    if (found && !openers[i-1].className.match(/dont\-auto\-open/)) {
       openSection(openers[i - 1].href);
     }
   }
@@ -48,6 +48,8 @@ $(function() {
       event.preventDefault();
 
       location.hash = selector.replace(/^\#/, 'seccao-');
+    
+      window.scrollBy(0, 1);
     }
   });
 
@@ -75,7 +77,7 @@ window.jumpTo = function(selector) {
       openSection('#' + section.attr('id'));
     }
     $('html, body').animate({
-        scrollTop: $target.offset().top
+        scrollTop: $target.offset().top - 120
     }, 500);
     if (updateHash) {
       setTimeout(function() {
