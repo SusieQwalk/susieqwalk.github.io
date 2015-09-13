@@ -22,6 +22,19 @@ header .ink-navigation .menu{
 	width:100%;
 }
 
+.ink-navigation ul.menu.horizontal{
+ 	font-size:0;
+	text-align:center;
+	font-family: "Roboto_condensed", Arial, Helvetica, sans-serif;
+	text-transform:uppercase;   
+}
+
+.ink-navigation ul.menu.horizontal li {
+    display: inline-block;
+	float:none;
+	font-size:16px;
+}
+
 a{
 	font-weight: 400;
 	text-decoration: none;
@@ -92,10 +105,6 @@ img{
 	width:300px;
 }
 
-figure img{
-	border:1px solid #dedede;
-}
-
 .projects{
 	background-color:#000;
 }
@@ -114,10 +123,6 @@ figure img{
 
 .projects-list a:hover{
     opacity:1;
-}
-
-.projectos-mobile img,img.no-b{
-    border:none;
 }
 
 a.button,.button{
@@ -250,6 +255,10 @@ a.button:hover,.button:hover{
 
 .sobre,.projectos,.inspira{
 	background-color:#232323;
+}
+
+.projecto-destaque,.lista-web{
+	background-color: #F5F5F5;
 }
 
 footer{
