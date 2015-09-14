@@ -44,6 +44,17 @@
         <script type="text/javascript" src="js/ink-all.min.js"></script>
         <script type="text/javascript" src="js/autoload.js"></script>
 
+        <script>
+          (function(d) {
+            var config = {
+              kitId: 'emd5dpc',
+              scriptTimeout: 3000,
+              async: true
+            },
+            h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+          })(document);
+        </script>
+
     </head>
     <body class="ink-drawer">
 
@@ -147,7 +158,7 @@
                     </div>
                     
                     <div class="all-70 medium-100 small-100 tiny-100 content-text"> 
-                        <h2 class="destaque-font fw-100 uppercase">O Mundo do cinema em todos os ecrâs</h2>
+                        <h2 class="destaque-font fw-100 uppercase">O Mundo do cinema em todos os ecrãs</h2>
                         <p>Era necessário redesenhar todo o site de Cinema. Foi o <strong>primeiro site responsive no <a href="http://sapo.pt">SAPO</a></strong>.</p>
                         <p>Como requisito o site teria que ser <strong>compatível com multiplataforma</strong> para desta forma promover a <strong>leitura confortável dos artigos</strong>, e <strong>peças editoriais</strong>. </p>
                         <p>Visto o utilizador procurar com frequência trailers decidi dar mais destaque a este ponto fomentando <strong>o consumo de vídeo</strong>.</p>

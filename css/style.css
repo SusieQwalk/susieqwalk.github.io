@@ -1,6 +1,25 @@
+body {
+	font-family: "adelle-sans", sans-serif;
+}
+
+body * {
+	font-family: inherit;
+}
+
+strong {
+	font-weight: 600;
+}
+
+em {
+	font-style: normal;
+	font-weight: 600;
+}
+
 header h1{
 	font-size:3em;
 	margin-bottom:0;
+	letter-spacing: 2px;
+	margin-top: 16px;
 }
 
 header p{
@@ -14,6 +33,10 @@ header a:hover{
 	color: #fff;
 }
 
+.content-drawer {
+	padding-top: 1em;
+}
+
 header .ink-navigation .menu{
 	position:fixed;
 	top:0;
@@ -25,7 +48,7 @@ header .ink-navigation .menu{
 .ink-navigation ul.menu.horizontal{
  	font-size:0;
 	text-align:center;
-	font-family: "Roboto_condensed", Arial, Helvetica, sans-serif;
+	font-family: "adelle-sans", "Roboto_condensed", Arial, Helvetica, sans-serif;
 	text-transform:uppercase;   
 }
 
@@ -46,7 +69,7 @@ a:hover{
 
 a.url-link{
 	font-weight: 400;
-	font-family: "Roboto_condensed", Arial, Helvetica, sans-serif;
+	font-family: "adelle-sans", "Roboto_condensed", Arial, Helvetica, sans-serif;
 }
 
 ul{
@@ -56,8 +79,8 @@ ul{
 
 h1.section-title{
 	margin-bottom: 0.25em;
-	text-transform: uppercase;
 	font-weight: 400;
+	font-family: "freight-micro-pro", serif;
 }
 
 h1 + p,h1 + h2  + p{
@@ -74,6 +97,9 @@ h1 + h2{
 
 .presentation h2{
 	font-size: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 2em;
 }
 
 .sobre h3{
@@ -126,7 +152,7 @@ img{
 }
 
 a.button,.button{
-    font-family: "Roboto_condensed", Arial, Helvetica, sans-serif;
+    font-family: "adelle-sans", "Roboto_condensed", Arial, Helvetica, sans-serif;
 	display:inline-block;
 	color: #e61875;
 	border: solid 3px #e61875;
@@ -143,7 +169,8 @@ a.button,.button{
 
 header a.button,header .button,.contact .button{
 	background-color: rgba(0, 0, 0, 0.5);
-	font-size: 2em;
+    font-size: 1.5em;
+    padding: .5em 2em;
 }
 
 a.button:hover,.button:hover{
@@ -202,10 +229,12 @@ a.button:hover,.button:hover{
 
 .categoria{
 	display: block;
-	font-weight: 200;
-	font-size: 0.8em;
-	font-family: Roboto_slab,Arial,Helvetica,sans-serif;
-	text-transform:none;
+	font-weight: 100;
+	font-size: 0.5em;
+	font-family: "adelle-sans", Roboto_slab,Arial,Helvetica,sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #999;
 }
 
 .ink-grid{
@@ -245,12 +274,12 @@ a.button:hover,.button:hover{
 }
 
 .url{
-	font-family: "Roboto_slab", Arial, Helvetica, sans-serif;
+	font-family: "adelle-sans", "Roboto_slab", Arial, Helvetica, sans-serif;
 	font-weight: 700;
 }
 
 .link-inactive{
-	font-family: "Roboto_slab", Arial, Helvetica, sans-serif;
+	font-family: "adelle-sans", "Roboto_slab", Arial, Helvetica, sans-serif;
 }
 
 .sobre,.projectos,.inspira{
@@ -346,7 +375,7 @@ blockquote {
 	padding-left: 0;
 	margin-bottom: 2em;
 	font-weight: 100;
-	font-family: "Roboto_slab", Arial, Helvetica, sans-serif;
+	font-family: "adelle-sans", "Roboto_slab", Arial, Helvetica, sans-serif;
 	color:#ccc;
 }
 
@@ -355,7 +384,7 @@ blockquote + span{
 	font-size: 0.9em;
 	display: block;
 	margin-top: 1em;
-	font-family: "Roboto",Arial,Helvetica,sans-serif;
+	font-family: "adelle-sans", "Roboto",Arial,Helvetica,sans-serif;
 }
 
 label,input{
