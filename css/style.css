@@ -112,6 +112,7 @@ h1 + h2{
 
 .presentation h2 span{
 	display: block;
+	margin-top:0.5em;
 }
 
 .whatido li{
