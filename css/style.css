@@ -110,10 +110,13 @@ h1 + h2{
     margin-bottom: 2em;
 }
 
+.whatido li{
+	display: inline-block;
+}
+
 .sobre h3{
 	font-size: 1em;
-	font-weight:100;
-	
+	font-weight:100;	
 }
 
 p{
