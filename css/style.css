@@ -149,7 +149,7 @@ img{
 	width:300px;
 }
 
-.projects{
+.projects,.old-school figure{
 	background-color:#000;
 }
 
@@ -157,7 +157,7 @@ img{
 	display:block;
 }
 
-.projects-list a{
+.projects-list a,.old-school img{
   opacity:0.6;
   -webkit-transition: opacity .2s ease-in-out;
   -moz-transition: opacity .2s ease-in-out;
@@ -165,7 +165,7 @@ img{
     transition: opacity .2s ease-in-out;
 }
 
-.projects-list a:hover{
+.projects-list a:hover,.old-school img:hover{
     opacity:1;
 }
 
@@ -300,20 +300,6 @@ a.button:hover,.button:hover{
 .link-inactive{
 	font-family: "Roboto_slab", Arial, Helvetica, sans-serif;
 }
-
-.old-school figure{
-	background-color:#000;
-}
-
-.old-school img{
-	opacity:0.4;
-}
-
-.old-school img:hover{
-	opacity:1;
-}
-
-
 
 .sobre,.projectos,.inspira{
 	background-color:#232323;
