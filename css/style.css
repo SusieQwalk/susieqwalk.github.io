@@ -110,6 +110,10 @@ h1 + h2{
     margin-bottom: 2em;
 }
 
+.presentation h2 span{
+	display: block;
+}
+
 .whatido li{
 	display: inline-block;
 }
