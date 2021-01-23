@@ -301,6 +301,20 @@ a.button:hover,.button:hover{
 	font-family: "Roboto_slab", Arial, Helvetica, sans-serif;
 }
 
+.old-school figure{
+	background-color:#000;
+}
+
+.old-school img{
+	opacity:0.4;
+}
+
+.old-school img:hover{
+	opacity:1;
+}
+
+
+
 .sobre,.projectos,.inspira{
 	background-color:#232323;
 }
