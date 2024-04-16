@@ -1,5 +1,4 @@
 body {
-	font-family: sans-serif;
 	font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
@@ -17,18 +16,31 @@ em {
 }
 
 header h1{
-	font-size:3em;
-	margin-bottom:0;
-	margin-top: 16px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-family: sans-serif;
+    color: black;
+    font-size: 56px;
+    line-height: 60px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    text-decoration: none;
+	display: inline-block;
+    padding-right: 0px;
+    padding-left: 0px;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #fff, 1px 1px 1px #fff, -1px 0 0 #fff, 1px 0 0 #fff, 0 -1px 1px #fff, 1px 1px 0 #fff;
+}
+
+
+header .presentation h1{
+    color: black;
 }
 
 header p{
 	margin-bottom:0;
 }
 
-header a{
-	color:#f9b24f;
-}
 header a:hover{
 	color: #fff;
 }
@@ -78,17 +90,22 @@ ul{
 }
 
 h1.section-title{
-    margin-bottom: 0.25em;
-    text-transform: uppercase;
-    font-weight: 400;
-	font-size: 1.9em;
+    display: inline-block;
+    padding-right: 0px;
+    padding-left: 0px;
+    text-decoration: none;
+	margin-bottom:0.2em;
+}
+
+h1.section-title span{
+    text-decoration: none;
+    text-shadow: none;
 }
 
 h1.section-main-title {
 	margin-bottom: 0.25em;
 	font-weight: 400;
 	text-transform: uppercase;
-	font-family:"Roboto_slab", Arial, Helvetica, sans-serif;
 }
 
 h1 + p,h1 + h2  + p{
@@ -104,21 +121,29 @@ h1 + h2{
 }
 
 .presentation h2{
-	font-size: 1.5em;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 2em;
+	font-size: 2em;
+    margin-bottom: 0em;
+	letter-spacing: 2px;
+}
+
+.name-present {
+    font-size: 56px;
+    font-weight: 400;
 }
 
 .presentation h2 span{
 	display: block;
 	margin-top:0.5em;
+	font-size: 0.6em;
+	font-weight: 100;
 }
 
 .whatido li{
 	display: inline-block;
 	text-transform:uppercase;
 	padding:0.2em;
+	font-size:0.8em;
+	opacity:0.7;
 }
 
 .sobre h3{
@@ -132,7 +157,13 @@ p{
 
 p.person{
 	margin-bottom: 0.1em;
-	font-weight: 400;
+	font-weight: 500;
+    font-family: Roboto_slab,Arial,Helvetica,sans-serif;
+	letter-spacing: 3px;
+}
+
+.link-people{
+	font-size: 0.8em;
 }
 
 ul,li{
@@ -171,10 +202,42 @@ img{
     opacity:1;
 }
 
-a.button,.button{
+section.old-school{
+    padding-bottom:0;
+}
+
+a.button{
+    font-family: "Roboto_condensed", Arial, Helvetica, sans-serif;
+    display: inline-block;
+    color: #e61875;
+	background-color:#fff;
+    padding-top: 0.2em;
+    padding-right: 1em;
+    padding-bottom: 0.2em;
+    padding-left: 1em;
+    -webkit-transition: background-color .3s ease-in-out;
+    -moz-transition: background-color .3s ease-in-out;
+    -o-transition: background-color .3s ease-in-out;
+    transition: background-color .3s ease-in-out;
+    text-transform: uppercase;
+}
+
+a.button:hover{
+	color:#fff;
+    padding-left: 1em;
+	background-color:#e61875;
+    -webkit-transition: background-color .3s ease-in-out;
+    -moz-transition: background-color .3s ease-in-out;
+    -o-transition: background-color .3s ease-in-out;
+    transition: background-color .3s ease-in-out;
+	text-decoration:none;
+
+}
+
+button.button{
     font-family: "Roboto_condensed", Arial, Helvetica, sans-serif;
 	display:inline-block;
-	color: #e61875;
+	color: #fff;
 	padding-top: 0.2em;
 	padding-right: 1em;
 	padding-bottom: 0.2em;
@@ -186,26 +249,26 @@ a.button,.button{
 	text-transform: uppercase;
 }
 
-header a.button,header .button,.contact .button{
-	background-color: rgba(0, 0, 0, 0.5);
-    font-size: 1.5em;
-    padding: .5em 2em;
-}
-
-a.button:hover,.button:hover{
-	text-decoration:none;
-	background-color: #e61875;
-	color:#fff;
-}
-
 .contact .button{
-	font-size: 1em;
+	font-family: "Roboto_condensed", Arial, Helvetica, sans-serif;
+	background-color:#e61875;
+	-webkit-transition: background-color .3s ease-in-out;
+	-moz-transition:background-color .3s ease-in-out;
+	-o-transition: background-color .3s ease-in-out;
+	transition:  background-color .3s ease-in-out;
+	text-transform: uppercase;
+    font-size: 1em;
+    padding: .5em 2em;
+	border: none;
+	font-weight:400;
 }
+
 
 .contact .button:hover{
 	text-decoration:none;
-	background-color: #e61875;
-	color:#fff;
+	background-color: #fff;
+	color:#e61875;
+	
 }
 
 .align-bottom{
@@ -246,7 +309,7 @@ a.button:hover,.button:hover{
 	margin-right:auto;
 	margin-left:auto;
 	padding-top: 2em;
-	padding-bottom: 5em;
+	padding-bottom: 0;
 }
 
 .categoria{
@@ -277,13 +340,13 @@ a.button:hover,.button:hover{
 	color:#fff;
 }
 
-.inspira a,.sobre a{
+article a{
 	color: #999;
 }
 
 .area{
 	padding-top: 2em;
-	padding-bottom: 4em;
+	padding-bottom: 2em;
 }
 
 .lista-web {
@@ -314,9 +377,6 @@ footer{
 	background-color:#000;
 }
 
-.sobre a,.projectos a,.inspira a,footer a{
-	color:#f9b24f;
-}
 
 .destaque-font{
 	font-size: 1.7em;
@@ -390,6 +450,20 @@ footer{
 	background-position: 0 105px;
 }
 
+ul.info-project {
+    display: block;
+	margin-top:0;	
+}
+
+ul.info-project li{
+    display: inline-block;
+	padding:0 0.5em 0 0.5em;
+	margin:0;
+	list-style: circle;
+	font-size:0.8em;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
 blockquote {
 	border-left: none;
 	padding-left: 0;
@@ -397,6 +471,7 @@ blockquote {
 	font-weight: 100;
 	font-family: "Roboto_slab", Arial, Helvetica, sans-serif;
 	color:#ccc;
+	font-size: 0.9em;
 }
 
 blockquote + span{
