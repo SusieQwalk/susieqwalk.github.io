@@ -299,14 +299,7 @@ button.button{
 	margin-left:auto;
 }
 
-.content-text {
-	padding-top:5em;
-	padding-bottom:5em;
-}
 
-.ilustracao .content-text {
-	padding-top:2em;
-}
 
 .content-subtext  > :last-child,
 .content-text > :last-child {
@@ -316,7 +309,7 @@ button.button{
 .content-subtext {
 	margin-right:auto;
 	margin-left:auto;
-	padding-top: 2em;
+	padding-top: 0;
 	padding-bottom: 0;
 }
 
