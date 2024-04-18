@@ -104,8 +104,12 @@ h1.section-title span{
 
 h1.section-main-title {
 	margin-bottom: 0.25em;
-	font-weight: 400;
+	font-weight: 300;
 	text-transform: uppercase;
+	background-color:#000;
+	color: #fff;
+	display:inline-block;
+	padding: 0px 1em 0px 1em;
 }
 
 h1 + p,h1 + h2  + p{
@@ -116,7 +120,7 @@ h1 + h2{
 	font-weight: 100;
 }
 
-.sobre h3,.presentation h2,.presentation h3,ul.whatido,.presentation p{
+.presentation h2,.presentation h3,ul.whatido,.presentation p{
 	color:#fff;
 }
 
@@ -134,7 +138,7 @@ h1 + h2{
 .presentation h2 span{
 	display: block;
 	margin-top:0.5em;
-	font-size: 0.6em;
+	font-size: 0.7em;
 	font-weight: 100;
 }
 
@@ -176,6 +180,10 @@ img{
 
 .inspira img,.presentation img,.theysay img{
 	border-radius:100em;
+}
+
+.theysay article{
+	margin-bottom: 0;
 }
 
 .presentation img{
@@ -328,16 +336,14 @@ button.button{
 	opacity:0.6;
 }
 	
-.presentation h1,
-.inspira,
-.sobre,
-.inspira h1,
-.sobre h1,
-.sobre h2,
 .contact h1,
 .contact label,
 .contact .ink-form .control-group.required label{
 	color:#fff;
+}
+
+.ink-form fieldset {
+    text-align: left;
 }
 
 article a{
@@ -345,8 +351,8 @@ article a{
 }
 
 .area{
-	padding-top: 2em;
-	padding-bottom: 2em;
+	padding-top: 4em;
+	padding-bottom: 4em;
 }
 
 .lista-web {
@@ -366,7 +372,7 @@ article a{
 }
 
 .sobre,.projectos,.inspira{
-	background-color:#232323;
+	background-color:#e0e0e1;
 }
 
 .projecto-destaque,.lista-web{
@@ -438,6 +444,13 @@ footer{
 .outros .icon-seccao{
 	background-position: 0 -1472px;
 }
+
+.instagram{
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+
 .inspira .icon-seccao{
 	background-position: 0 -115px;
 }
@@ -452,7 +465,8 @@ footer{
 
 ul.info-project {
     display: block;
-	margin-top:0;	
+	margin-top:0;
+	margin-bottom:2em;	
 }
 
 ul.info-project li{
@@ -470,7 +484,6 @@ blockquote {
 	margin-bottom: 2em;
 	font-weight: 100;
 	font-family: "Roboto_slab", Arial, Helvetica, sans-serif;
-	color:#ccc;
 	font-size: 0.9em;
 }
 
