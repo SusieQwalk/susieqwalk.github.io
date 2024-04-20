@@ -1,9 +1,21 @@
 body {
 	font-family: "Roboto", Arial, Helvetica, sans-serif;
+
 }
 
+body .column-group.gutters .space-0 {
+	margin-bottom:0;
+}
+
+
+
+
+body, h1, h2, h3, h4, h5, h6{
+	color:#000;
+}
+	
 body * {
-	font-family: inherit;
+	font-family: inherit;	
 }
 
 strong {
@@ -139,7 +151,7 @@ h1 + h2{
 	display: block;
 	margin-top:0.5em;
 	font-size: 0.7em;
-	font-weight: 100;
+	font-weight: 200;
 }
 
 .whatido li{
@@ -151,8 +163,7 @@ h1 + h2{
 }
 
 .sobre h3{
-	font-size: 1em;
-	font-weight:100;	
+	font-size: 1em;	
 }
 
 p{
@@ -315,7 +326,7 @@ button.button{
 
 .categoria{
     display: block;
-    font-weight: 200;
+    font-weight: 300;
     font-size: 0.8em;
     font-family: Roboto_slab,Arial,Helvetica,sans-serif;
     text-transform: none;
