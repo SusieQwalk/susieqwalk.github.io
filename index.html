@@ -829,13 +829,19 @@ Everyone should be lucky to work with Susana</p>
                                   <input type="text" name="name" id="name" placeholder="Enter your name" required>
                                   </div>
                               </div>
-                              <label for="email">Email</label>
-                              <input type="email" name="email" id="email" placeholder="Enter your email" required>
-                            
+                              <div class="control-group required">
+                             	 <label for="email">Email</label>
+                                 <div class="control">
+                             	 <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                                 </div>
+                             </div>
+                             <div class="control-group required">
                               <label for="message">Message</label>
-                              <textarea name="message" id="message" rows="5" placeholder="Write your message here…" required></textarea>
-                            
-                              <button type="submit">Send Message</button>
+                                  <div class="control">
+                                  <textarea name="message" id="message" rows="5" placeholder="Write your message here…" required></textarea>
+                                  </div>
+                              </div>
+                              <button type="submit" class="button">Send Message</button>
                               </fieldset>
                             </form>
                       
@@ -857,7 +863,8 @@ Everyone should be lucky to work with Susana</p>
                                     <div class="control">
                                         <input type="text" id="real_nome" name="real_name">
                                     </div>
-                                </div>   
+                                </div> 
+                                  
                                 <div class="control-group required">
                                     <label class="" for="real_email">Email</label>
                                     <div class="control">
