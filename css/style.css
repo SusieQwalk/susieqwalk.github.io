@@ -342,7 +342,8 @@ button.button{
 	
 .contact h1,
 .contact label,
-.contact .ink-form .control-group.required label{
+.contact .ink-form .control-group.required label,
+.message-feedback{
 	color:#fff;
 }
 
@@ -384,9 +385,6 @@ footer{
 	background-color:#000;
 }
 
-footer p{
-	background-color:#fff;
-}
 
 
 .destaque-font{
