@@ -57,7 +57,7 @@
     </head>
     <body class="ink-drawer">
 
-        <!--[if lt IE 9 ]>c
+        <!--[if lt IE 9 ]>
         <div class="ink-alert basic" role="alert">
             <button class="ink-dismiss">&times;</button>
             <p>
@@ -161,7 +161,7 @@
                     </div>
                     <div class="all-100 content-subtext"> 
                         <h2 class="destaque-font fw-300 uppercase">Who is Susie Q?</h2>
-                        <p>A specialised and experienced Web Designer, problem solver, working with both personalised clients and customer support teams. She worked with an in with quality and UX teams. Loves embracing new challenges and is always looking for opportunities to upskill and challenge her creative mind.</p>
+                        <p>A specialised and experienced Web Designer working with both personalised clients and customer support teams. She worked very close with quality and UX teams. Loves embracing new challenges and is always looking for opportunities to upskill and challenge her creative mind.</p>
                         <p>Has excellent communication skills and starts every day with a very positive attitude. Loves being part of a team helping to promote and engender a positive working environment to enable creative brain storming among team members. </p>
                         <p>Her pastimes include an extreme passion for <strong>LEGO</strong> - you can ask her about her varied and eclectic collection or see some for yourself at her instagram account <a href="https://www.instagram.com/susieqlego/">@SusieQLEGO</a>. </p>                        
                         <p>This helps to keep her artistic mind occupied and fuels her other passions for art, stopmotion, drawing, jewelry and photography. These can be viewed in her photography collection at her mainly instagram account <a href="https://www.instagram.com/susieqwalk/">@SusieQwalk</a>. You’ll found there her travels and other passion as well - Animals, in general. She loves them so much that she can’t ignore a stray dog or cat and she doesn’t stop until she finds them homes. She adopted her cutte dog CMYK in 2012 and he’s so important that she started to work as petsitter as well <a href="https://www.instagram.com/susieqpetsitter/">@SusieQpetsitter</a>.</p>
@@ -821,6 +821,28 @@ Everyone should be lucky to work with Susana</p>
                 <section class="contact area" id="contactar-me">
                     <div class="ink-grid align-center"> 
                         <h1 class="section-main-title">Contact Me</h1>
+                            <form id="contact-form" class="ink-form ink-grid all-50 small-100 tiny-100" action="https://formspree.io/f/mreknydy" method="POST">
+                              <label for="name">Name</label>
+                              <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                            
+                              <label for="email">Email</label>
+                              <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                            
+                              <label for="message">Message</label>
+                              <textarea name="message" id="message" rows="5" placeholder="Write your message here…" required></textarea>
+                            
+                              <button type="submit">Send Message</button>
+                            </form>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
                         <form id="contact-form" class="ink-form ink-grid all-50 small-100 tiny-100"
                         enctype="multipart/form-data" method="post" action="https://susieqwalk.herokuapp.com/send_email"
                         data-success="Thank you for getting in touch! Stay more and have a drink."
@@ -875,4 +897,3 @@ Everyone should be lucky to work with Susana</p>
 
     </body>
 </html>
-
