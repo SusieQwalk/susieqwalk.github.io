@@ -384,6 +384,10 @@ footer{
 	background-color:#000;
 }
 
+footer p{
+	background-color:#fff;
+}
+
 
 .destaque-font{
 	font-size: 1.7em;
