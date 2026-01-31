@@ -821,44 +821,92 @@ Everyone should be lucky to work with Susana</p>
                 <section class="contact area" id="contactar-me">
                     <div class="ink-grid align-center"> 
                         <h1 class="section-main-title">Contact Me</h1>
-                        <form id="contact-form" class="ink-form ink-grid all-50 small-100 tiny-100"
-                        enctype="multipart/form-data" method="post" 
-                        action="https://formspree.io/f/mreknydy"
+                        <form
+                          id="contact-form"
+                          class="ink-form ink-grid all-50 small-100 tiny-100"
+                          method="POST"
+                          action="https://formspree.io/f/mreknydy">
                         
-                        data-success="Thank you for getting in touch! Stay more and have a drink."
-                        data-error="Oops, something went worng :(">
+                          <fieldset class="dados-pessoais">
                         
-                            <fieldset class="dados-pessoais">                      
-                                <div class="control-group">
-                                    <label class="" for="real_nome">Name</label>
-                                    <div class="control">
-                                        <input type="text" id="real_nome" name="real_name">
-                                    </div>
-                                </div>   
-                                <div class="control-group required">
-                                    <label class="" for="real_email">Email</label>
-                                    <div class="control">
-                                        <input type="email" required id="real_email" name="real_email">
-                                    </div>
-                                </div>                                     
-                                <div class="control-group required">
-                                    <label class="t" for="area">Message</label>
-                                    <div class="control">
-                                        <textarea id="area" required name="message"></textarea>
-                                        <p class="tip">maximum 350 characters</p>
-                                    </div>
-                                </div>
-                                <p class="nc-test">
-                                    <label for="name">If you're an human, do not fill the field:</label>
-                                    <input type="text" name="name" id="name">
-                                </p>
-                                <p class="nc-test">
-                                    <label for="email">If you're an human, do not fill the field:</label>el>
-                                    <input type="text" name="email" id="email">
-                                </p>
-                                <p><button type="submit" class="button">Send</button></p>
-                            </fieldset>
+                            <div class="control-group">
+                              <label for="real_nome">Name</label>
+                              <div class="control">
+                                <input type="text" id="real_nome" name="name">
+                              </div>
+                            </div>
+                        
+                            <div class="control-group required">
+                              <label for="real_email">Email</label>
+                              <div class="control">
+                                <input type="email" required id="real_email" name="email">
+                              </div>
+                            </div>
+                        
+                            <div class="control-group required">
+                              <label for="area">Message</label>
+                              <div class="control">
+                                <textarea id="area" required name="message"></textarea>
+                                <p class="tip">maximum 350 characters</p>
+                              </div>
+                            </div>
+                        
+                            <!-- Honeypot (anti-spam) — invisível no teu CSS -->
+                            <p class="nc-test">
+                              <label for="website">If you're a human, do not fill this field:</label>
+                              <input type="text" name="website" id="website">
+                            </p>
+                        
+                            <p class="nc-test">
+                              <label for="company">If you're a human, do not fill this field:</label>
+                              <input type="text" name="company" id="company">
+                            </p>
+                        
+                            <p><button type="submit" class="button">Send</button></p>
+                        
+                          </fieldset>
                         </form>
+                        
+                        <!-- Mensagens de feedback (depois estilizas no teu CSS) -->
+                        <p id="success-message" style="display:none;">
+                          Thank you for getting in touch! Stay more and have a drink. 😊
+                        </p>
+                        
+                        <p id="error-message" style="display:none;">
+                          Oops, something went wrong :(
+                        </p>
+                        
+                        <script>
+                        const form = document.getElementById("contact-form");
+                        const successMessage = document.getElementById("success-message");
+                        const errorMessage = document.getElementById("error-message");
+                        
+                        form.addEventListener("submit", function (e) {
+                          e.preventDefault();
+                        
+                          successMessage.style.display = "none";
+                          errorMessage.style.display = "none";
+                        
+                          var data = new FormData(form);
+                        
+                          fetch(form.action, {
+                            method: "POST",
+                            body: data,
+                            headers: { "Accept": "application/json" }
+                          })
+                          .then(function (response) {
+                            if (response.ok) {
+                              successMessage.style.display = "block";
+                              form.reset();
+                            } else {
+                              errorMessage.style.display = "block";
+                            }
+                          })
+                          .catch(function () {
+                            errorMessage.style.display = "block";
+                          });
+                        });
+                        </script>
                     </div>
                 </section>
             </footer>
