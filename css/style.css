@@ -343,12 +343,12 @@ button.button{
 .contact h1,
 .contact label,
 .contact .ink-form .control-group.required label,
-.positive-feedback, 
-.error-feedback{
+p.positive-feedback, 
+p.error-feedback{
 	color:#fff;
 }
 
-.positive-feedback{
+p.positive-feedback{
 	background-color: green;
 	opacity: 0.8;
 }
