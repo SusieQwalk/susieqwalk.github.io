@@ -343,9 +343,16 @@ button.button{
 .contact h1,
 .contact label,
 .contact .ink-form .control-group.required label,
-.message-feedback{
+.positive-feedback, 
+.error-feedback{
 	color:#fff;
 }
+
+.positive-feedback{
+	background-color: green;
+	opacity: 0.8;
+}
+
 
 .ink-form fieldset {
     text-align: left;
